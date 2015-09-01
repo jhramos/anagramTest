@@ -1,0 +1,13 @@
+<h1>Novo Teste</h1>
+
+ 	<%= form_for(@word) do |f|%>
+		<%= f.label :palavra1 %>
+		<%= f.text_field :palavra1 %>
+
+		<%= f.label :palavra2 %>
+		<%= f.text_field :palavra2 %>
+
+		<%= f.submit "Create Test"%>
+	<%end%>
+	
+<%= link_to 'Back', words_path %>

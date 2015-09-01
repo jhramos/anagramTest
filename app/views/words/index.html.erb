@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Lista de Testes</h1>
+<p><%= link_to 'Novo Teste', new_word_path %></p>
+<p><%= link_to 'READ ME', '/readme' %></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Palavra 1</th>
+      <th>Palavra 2</th>
+      <th>isAnagram</th>
+      <th colspan="5"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @words.each do |word| %>
+      <tr>
+        <td><%= word.palavra1 %></td>
+        <td><%= word.palavra2 %></td>
+        <td><%= word.isAnagram %></td>
+      </tr>
+    <% end %>
+
+   
+  </tbody>
+</table>
+ 
+
+
+<br>
+
+
